@@ -1,9 +1,4 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
+# Reproducible Research: Peer Assessment 1
 
 
 ## Loading and preprocessing the data
@@ -97,7 +92,7 @@ theHist <- theHist + geom_vline(aes(xintercept=stepsMean, color="mean"), color="
 theHist
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
 
 
 The mean (9354.2295082) is represented by blue vertical line and median (10395) as red one. 
@@ -132,7 +127,7 @@ myTS <- myTS + labs( x="time of day (hrs)", y="avg no of steps in the inteval (5
 myTS
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
 
 We can see on the plot that the maximum steps are taken some time after 8. Let's see what time exactly.
 
@@ -231,9 +226,9 @@ theHist <- theHist + geom_vline(aes(xintercept=adjustedStepsMean, color="mean"),
 theHist
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
 
-The mean (1.0766189 &times; 10<sup>4</sup>) and median (1.0766189 &times; 10<sup>4</sup>) overlap now.  
+The mean (1.0766189\times 10^{4}) and median (1.0766189\times 10^{4}) overlap now.  
 
 If we compare the histogram with the previous version we can also see that the number of days with little activity is much lower now. That proves that the "no activity days" were indeed introduced by incorrect data.
 
@@ -306,7 +301,7 @@ myTS <- myTS + theme_bw() + facet_grid(day ~ .)
 myTS
 ```
 
-![plot of chunk unnamed-chunk-16](figure/unnamed-chunk-16-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-16-1.png) 
 
 Comparing those two plots, we can see that we walk more in the weekend. Between 12 and 16 there are more steps taken. We begin later (after 8) and stay active until the evening  (after 20). 
 
